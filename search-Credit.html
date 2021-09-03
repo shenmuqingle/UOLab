@@ -1,0 +1,139 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>无标题文档</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/select.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+		<script type="text/javascript" src="js/select-ui.min.js"></script>
+		<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+		<script type="text/javascript">
+			KE.show({
+				id: 'content7',
+				cssPath: './index.css'
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(e) {
+
+				$(".select3").uedSelect({
+					width: 152
+				});
+			});
+		</script>
+	</head>
+
+	<body class="sarchbody">
+
+		<div class="place">
+			<span>位置：</span>
+			<ul class="placeul">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">查询学分</a></li>
+			</ul>
+		</div>
+
+		<div class="formbody">
+
+			<div id="usual1" class="usual">
+
+				<ol class="seachform1">
+
+					<li><div class="vocation"><label>学号</label><input name="" type="text" class="scinput1" /></div></li>
+						
+					<li><div class="vocation"><label>姓名</label><input name="" type="text" class="scinput1" /></div></li>
+					
+					<li><div class="vocation"><label>时间</label><input name="" type="text" class="scinput1" /></div></li>
+						
+				</ol>
+
+				<ol class="seachform1">
+					<li class="sarchbtn"><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查询" /></li>
+				</ol>
+
+				<script language="javascript">
+					$(document).ready(function() {
+						$(".scbtn1").click(function() {
+							if ($(".seachform2").hasClass("hideclass")) {
+								$(".seachform2").removeClass("hideClass");
+							} else {
+								$(".seachform2").addClass("hideClass");
+							}
+						});
+					});
+				</script>
+
+
+				<script type="text/javascript">
+					$(document).ready(function() {
+						$(".scbtn1").click(function() {
+							$(".seachform2").fadeIn(200);
+						});
+					});
+				</script>
+
+				<div class="formtitle"><span>项目列表</span></div>
+
+				<table class="tablelist">
+					<thead>
+						<tr>
+							<th><input name="" type="checkbox" value="" checked="checked" /></th>
+							<th>学号<i class="sort"><img src="images/px.gif" /></i></th>
+							<th>姓名</th>
+							<th>获得学分时间</th>
+							<th>创新学分记录</th>
+							<th>备注</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>2013040845</td>
+							<td>神墓青乐</td>
+							<td>2021.12.12</td>
+							<td>2.0</td>
+							<td>无</td>
+						</tr>
+						
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>2013040845</td>
+							<td>神墓青乐</td>
+							<td>2021.12.13</td>
+							<td>2.5</td>
+							<td>无</td>
+						</tr>
+						
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>2013040845</td>
+							<td>神墓青乐</td>
+							<td>2021.12.14</td>
+							<td>3.5</td>
+							<td>无</td>
+						</tr>
+
+					</tbody>
+					
+					<thead>
+						<tr>
+							<th><input name="" type="checkbox" value="" checked="checked" /></th>
+							<th>总分</th>
+							<th colspan="4" align="center"><input type="text" name="" id="total" value="8.0" /></th>
+						</tr>
+					</thead>
+					
+				</table>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

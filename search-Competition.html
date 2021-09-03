@@ -1,0 +1,149 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>无标题文档</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/select.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+		<script type="text/javascript" src="js/select-ui.min.js"></script>
+		<script type="text/javascript" src="editor/kindeditor.js"></script>
+
+		<script type="text/javascript">
+			KE.show({
+				id: 'content7',
+				cssPath: './index.css'
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(document).ready(function(e) {
+
+				$(".select3").uedSelect({
+					width: 152
+				});
+			});
+		</script>
+	</head>
+
+	<body class="sarchbody">
+
+		<div class="place">
+			<span>位置：</span>
+			<ul class="placeul">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">查询比赛信息</a></li>
+			</ul>
+		</div>
+
+		<div class="formbody">
+
+			<div id="usual1" class="usual">
+
+				<ul class="seachform1">
+
+					<li><div class="vocation"><label>年度</label><input name="" type="text" class="scinput1" /></div></li>
+					
+				</ul>
+
+				<ul class="seachform1">
+					<li class="sarchbtn"><label>&nbsp;</label><input name="" type="button" class="scbtn" value="查询" /></li>
+				</ul>
+
+				<script language="javascript">
+					$(document).ready(function() {
+						$(".scbtn1").click(function() {
+							if ($(".seachform2").hasClass("hideclass")) {
+								$(".seachform2").removeClass("hideClass");
+							} else {
+								$(".seachform2").addClass("hideClass");
+							}
+						});
+					});
+				</script>
+
+
+				<script type="text/javascript">
+					$(document).ready(function() {
+						$(".scbtn1").click(function() {
+							$(".seachform2").fadeIn(200);
+						});
+					});
+				</script>
+
+
+
+				<br><br><br><br><br>
+				<div class="formtitle"><span>项目列表</span></div>
+
+				<table class="tablelist">
+					<thead>
+						<tr>
+							<th><input name="" type="checkbox" value="" checked="checked" /></th>
+							<th>竞赛类别<i class="sort"><img src="images/px.gif" /></i></th>
+							<th>年度</th>
+							<th>题目</th>
+							<th>组长</th>
+							<th>组员</th>
+							<th>获奖等级</th>
+							<th>指导老师</th>
+						</tr>
+					</thead>
+					<tbody align="center">
+						
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>C</td>
+							<td>2013</td>
+							<td>人工智能面部识别</td>
+							<td>神墓青乐</td>
+							<td>shenmuqingle</td>
+							<td>无</td>
+							<td>吴智军</td>
+						</tr>
+						
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>C</td>
+							<td>2013</td>
+							<td>人工智能面部识别</td>
+							<td>神墓青乐</td>
+							<td>shenmuqingle</td>
+							<td>无</td>
+							<td>吴智军</td>
+						</tr>
+						
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>C</td>
+							<td>2013</td>
+							<td>人工智能面部识别</td>
+							<td>神墓青乐</td>
+							<td>shenmuqingle</td>
+							<td>无</td>
+							<td>吴智军</td>
+						</tr>
+						
+						<tr>
+							<td><input name="" type="checkbox" value="" /></td>
+							<td>C</td>
+							<td>2013</td>
+							<td>人工智能面部识别</td>
+							<td>神墓青乐</td>
+							<td>shenmuqingle</td>
+							<td>无</td>
+							<td>吴智军</td>
+						</tr>
+						
+					</tbody>
+				</table>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
